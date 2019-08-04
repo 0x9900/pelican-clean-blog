@@ -82,7 +82,7 @@
 		<meta property="og:site_name" content="{{ SITENAME }}">
 	{% endblock opengraph %}
     {% block twitter_card %}
-        {% for name,link in SOCIAL if name in ['twitter'] %}
+	{% for name,link in SOCIAL if name|lower in ['twitter'] %}
             <meta name="twitter:card" content="summary_large_image">
             <meta name="twitter:site" content="@{{ link|replace('http://', 'https://')|replace('https://twitter.com/', '') }}">
             <meta name="twitter:title" content="{{ SITENAME }}">
@@ -116,12 +116,13 @@
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ SITEURL }}/">{{ SITENAME }}</a>
+		<a class="navbar-brand" href="{{ SITEURL }}/"><span class="fa fa-home"></span> {{ SITENAME }}</a>
+		{% if ABOUT_URL %}
+		<a class="navbar-brand" href="{{ SITEURL }}/{{ ABOUT_URL }}"><span class="fa fa-address-card"></span> About</a>
+		{% endif %}
             </div>
+
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
