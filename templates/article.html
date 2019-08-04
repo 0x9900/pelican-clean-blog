@@ -133,7 +133,7 @@
         <div class="tags">
           <p>tags:
 	    {% for tag in article.tags %}
-	    <span class="fa fa-tag"></span> <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag | escape }}</a>{% if not loop.last %} &nbsp; {% endif %}
+	    <span class="fa fa-tag"></span>&nbsp;<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag | escape }}</a>{% if not loop.last %} &nbsp; {% endif %}
 	    {% endfor %}</p>
         </div>
     {% endif %}
