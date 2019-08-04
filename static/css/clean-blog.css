@@ -14,7 +14,6 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #303030;
-  line-height: 150%;
 }
 
 p {
@@ -22,7 +21,7 @@ p {
   margin: 30px 0;
 }
 p a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 h1,
 h2,
@@ -34,11 +33,11 @@ h6 {
   font-weight: 800;
 }
 a {
-  color: #0085a1;
+  color: #0059ad;
 }
 a:hover,
 a:focus {
-  color: #0057a2;
+    color: #0057a2;
 }
 a img:hover,
 a img:focus {
@@ -262,7 +261,7 @@ hr.small {
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
   color: #0085a1;
-  text-decoration: underline;
+  text-decoration: none;
 }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
@@ -501,4 +500,8 @@ img.alignleft, img.alignright, img.aligncenter {
   -webkit-box-shadow: rgba(0, 0, 0, 0.496094) 3px 3px 6px;
   -moz-box-shadow: rgba(0, 0, 0, 0.496094) 3px 3px 6px;
   box-shadow: rgba(0, 0, 0, 0.496094) 3px 3px 6px;
+}
+
+.tags a:hover {
+    text-decoration: none;
 }
