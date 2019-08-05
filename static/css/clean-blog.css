@@ -47,6 +47,9 @@ blockquote {
   color: #808080;
   font-style: italic;
 }
+blockquote p {
+    margin-top: 0px;
+}
 pre {
   font-family: "Inconsolata", Courier, sans-serif;
   background-color: transparent;
@@ -422,6 +425,12 @@ body {
 }
 
 /* 0x9900 specific styles */
+dt {
+    margin-top: 30px;
+}
+dd {
+   margin-left: 30px;
+}
 .footnote {
   font-size: 14px;
 }
