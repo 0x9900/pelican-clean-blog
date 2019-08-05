@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <url>
+    <loc>{{ SITEURL }}/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
 {% for article in articles %}
   <url>
     <loc>{{ SITEURL }}/{{ article.url }}</loc>
     <priority>0.8</priority>
+    {% if article.modified %}
+    <lastmod>{{ article.modified.strftime('%Y-%m-%d') }}</lastmod>
+    {% else %}
     <lastmod>{{ article.date.strftime('%Y-%m-%d') }}</lastmod>
+    {% endif %}
   </url>
 
   {% for translation in article.translations %}
