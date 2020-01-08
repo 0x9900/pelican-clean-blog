@@ -40,4 +40,11 @@
   {% endfor %}
 {% endfor %}
 
+{% for tag, articles in tags|sort %}
+  <url>
+    <loc>{{ SITEURL }}/{{ tag.url }}</loc>
+    <priority>0.5</priority>
+  </url>
+{% endfor %}
+
 </urlset>

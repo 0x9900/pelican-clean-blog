@@ -425,6 +425,9 @@ body {
 }
 
 /* 0x9900 specific styles */
+code {
+    background-color: #ebd2d8;
+}
 dt {
     margin-top: 30px;
 }
