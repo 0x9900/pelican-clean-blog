@@ -53,7 +53,7 @@ blockquote p {
 pre {
   font-family: "Inconsolata", Courier, sans-serif;
   background-color: transparent;
-  font-size: 16px;
+  font-size: 14px;
 }
 hr.small {
   max-width: 100px;
