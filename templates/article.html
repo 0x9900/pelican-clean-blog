@@ -4,8 +4,8 @@
 {% block head %}
     {{ super() }}
 
-    {% if article.keywords %}
-        <meta name="keywords" content="{{ article.keywords }}">
+    {% if article.tags %}
+        <meta name="keywords" content="{{ article.tags|join(', ')|striptags }}">
     {% endif %}
 
     {% if description %}
