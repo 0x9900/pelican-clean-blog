@@ -188,11 +188,11 @@
     </footer>
 
     <!-- jQuery -->
+    {% if ENABLE_JQUERY %}
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.min.js" async></script>
-
-    {% if not DISABLE_CUSTOM_THEME_JAVASCRIPT %}
-        <!-- Custom Theme JavaScript -->
-        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/clean-blog.min.js" async></script>
+    {% endif %}
+    {% if ENABLE_CUSTOM_THEME_JS %}
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/clean-blog.min.js" async></script>
     {% endif %}
 
     {% include 'analytics.html' %}

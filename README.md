@@ -79,8 +79,8 @@ CSS_OVERRIDE = 'myblog.css'
 
 ### Disable theme JavaScript
 
-Set ``DISABLE_CUSTOM_THEME_JAVASCRIPT`` to True if you want to disable
-``js/clean-blog.min.js`` in case it affects forms and input fields.
+Set ``ENABLE_CUSTOM_THEME_JS`` to True if you want to enable
+``js/clean-blog.min.js``.
 
 ### User defined footer
 
