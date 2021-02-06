@@ -5,9 +5,7 @@
 {% block header %}
     <!-- Page Header -->
     {% if HEADER_COVER %}
-        <header class="intro-header" style="background-image: url('{{ SITEURL }}/{{ HEADER_COVER }}')">
-    {% elif HEADER_COLOR %}
-        <header class="intro-header" style="background-color: {{ HEADER_COLOR }}">
+        <header class="intro-header" style="background-image: url('{{ HEADER_COVER }}')">
     {% else %}
         <header class="intro-header" style="background-image: url('{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/home-bg.jpg')">
     {% endif %}
@@ -24,8 +22,14 @@
 {% endblock header %}
 
 {% block content %}
-    <h1>Tags for {{ SITENAME }}</h1>
-    {%- for tag, articles in tags|sort %}
-        <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a> ({{ articles|count }})</li>
-    {% endfor %}
+	<ul>
+	  {%- for tag, articles in tags|sort %}
+	  <li>{{ tag }} ({{ articles|count }})</li>
+	  {%- for article in articles %}
+	  <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a><br/>
+	  {% endfor %}
+	  <hr/>
+	  {% endfor %}
+	</ul>
+
 {% endblock content %}
