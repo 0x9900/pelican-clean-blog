@@ -22,9 +22,7 @@
 {% endblock header %}
 
 {% block content %}
-    <ul>
-    {% for category, articles in categories %}
-        <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
-    {% endfor %}
-    </ul>
+{% for category, articles in categories %}
+	<h3><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a> <small class="count">({{ articles|count }} Articles)</small></h3>
+{% endfor %}
 {% endblock content %}
