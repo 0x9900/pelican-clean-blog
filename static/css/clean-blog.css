@@ -11,7 +11,7 @@ html {
 body {
     font-size: 14px;
     font-family: Assistant, sans-serif;
-    font-weight: 300;
+    font-weight:300;
     color:#303030
 }
 
@@ -66,14 +66,19 @@ hr.small {
 
 .navbar-custom .navbar-brand {
     font-weight: 800;
-    padding:10px
+    padding:15px 10px;
+    color: #444
 }
 
 .navbar-custom .nav li a {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 1px;
-    padding:10px
+    padding:15px 10px
+}
+
+.navbar-custom .nav li a:focus, .navbar-custom .nav li a:hover {
+    background-color: rgba(127, 127, 127, .3)
 }
 
 @media (min-width: 768px) {
@@ -86,16 +91,6 @@ hr.small {
     .navbar-custom {
         background: 0 0;
         border-bottom:1px solid transparent
-    }
-
-    .navbar-custom .navbar-brand {
-        color: #fff;
-        padding:10px
-    }
-
-    .navbar-custom .nav li a {
-        color: #fff;
-        padding:15px
     }
 
     .navbar-custom .navbar-brand:focus, .navbar-custom .navbar-brand:hover {
@@ -165,12 +160,12 @@ hr.small {
 
     .navbar-custom .navbar-brand {
         color: #fff;
-        padding:10px
+        padding:15px 30px
     }
 
     .navbar-custom .nav li a {
         color: #fff;
-        padding:15px
+        padding:15px 30px
     }
 
     .intro-header .page-heading h1, .intro-header .site-heading h1 {
@@ -223,7 +218,6 @@ hr.small {
 }
 
 .intro-header .page-heading .subheading, .intro-header .post-heading .meta, .intro-header .post-heading .subheading, .intro-header .site-heading .subheading {
-    font-weight: 300;
     line-height: 1.1;
     display: block;
     font-style:italic
@@ -231,7 +225,7 @@ hr.small {
 
 .intro-header .post-heading .subheading {
     margin: 10px 0 30px;
-    font-weight:600
+    font-weight:800
 }
 
 .intro-header .post-heading .meta a {
@@ -250,7 +244,6 @@ hr.small {
 
 .post-preview > a > .post-subtitle {
     margin: 0;
-    font-weight: 300;
     margin-bottom:10px
 }
 
@@ -272,21 +265,23 @@ hr.small {
 
 .section-heading {
     margin-top: 60px;
-    font-weight:700
+    font-weight:800
 }
 
-.caption {
+figcaption {
     text-align: center;
     padding: 10px;
     font-style: italic;
     margin: 0;
     display: block;
     border-bottom-right-radius: 5px;
-    border-bottom-left-radius:5px
+    border-bottom-left-radius:5px;
+    font-size: .7rem;
 }
 
 footer {
-    padding:50px 0 65px
+    padding:50px 0 65px;
+    font-size: .7rem;
 }
 
 footer .list-inline {
@@ -417,10 +412,6 @@ img::-moz-selection {
     background:0 0
 }
 
-body {
-    webkit-tap-highlight-color:#0085a1
-}
-
 code {
     background-color:#ebd2d8
 }
@@ -434,7 +425,8 @@ dd {
 }
 
 .footnote {
-    color:#555
+    color:#555;
+    font-size: .7rem;
 }
 
 .footnote li > p {
@@ -509,10 +501,12 @@ img.aligncenter, img.alignleft, img.alignright {
     box-shadow:rgba(0, 0, 0, .496094) 3px 3px 6px
 }
 
-.tags > a {
-    color:#303030
+.tags p > a {
+    color: #558;
+    font-weight:800;
 }
 
-.tags > a:hover {
-    text-decoration: none
+.tags p > a:hover {
+    font-weight:800;
+    text-decoration: underline
 }

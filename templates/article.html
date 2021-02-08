@@ -1,9 +1,8 @@
-<!-- PATH: {{ article.relative_source_path }} -->
 {% extends "base.html" %}
 
 {% block head %}
     {{ super() }}
-
+    <!-- PATH: {{ article.relative_source_path }} -->
     {% for keyword in article.keywords %}
         <meta name="keywords" contents="{{keyword}}" />
     {% endfor %}
