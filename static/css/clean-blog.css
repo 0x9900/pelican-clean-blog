@@ -243,6 +243,7 @@ hr.small {
 }
 
 .post-preview > .post-meta {
+    font-size: .75em;
     color: grey;
     font-style: italic;
     margin-top: 0;
