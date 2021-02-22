@@ -85,9 +85,9 @@ hr.small {
     body, html {
         font-size:16px
     }
-}
-
-@media (min-width: 768px) {
+    .pager li > a, .pager li > span {
+	padding: 15px 20px;
+    }
     .navbar-custom {
         background: 0 0;
         border-bottom:1px solid transparent
@@ -100,21 +100,26 @@ hr.small {
     .navbar-custom .nav li a:focus, .navbar-custom .nav li a:hover {
         color:rgba(255, 255, 255, .8)
     }
-}
 
-@media (min-width: 1024px) {
-    body, html {
-        font-size:18px
+    .navbar-custom .navbar-brand {
+	font-weight: 800;
+	padding:15px 10px;
+	color: #fff;
     }
-}
 
-@media (min-width: 1200px) {
-    body, html {
-        font-size:22px
+    .navbar-custom .nav li a {
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 1px;
+	padding:15px 10px;
+	color: #fff;
     }
 }
 
 @media (min-width: 1170px) {
+    body, html {
+        font-size: 22px
+    }
     .navbar-custom {
         -webkit-transition: background-color .3s;
         -moz-transition: background-color .3s;
@@ -158,16 +163,6 @@ hr.small {
         transform:translate3d(0, 100%, 0)
     }
 
-    .navbar-custom .navbar-brand {
-        color: #fff;
-        padding:15px 30px
-    }
-
-    .navbar-custom .nav li a {
-        color: #fff;
-        padding:15px 30px
-    }
-
     .intro-header .page-heading h1, .intro-header .site-heading h1 {
         font-size:8rem
     }
@@ -191,7 +186,7 @@ hr.small {
 
 @media (min-width: 768px) {
     .intro-header .page-heading h1, .intro-header .site-heading h1 {
-        font-size:8rem
+        font-size:4rem
     }
 
     .intro-header .page-heading, .intro-header .post-heading, .intro-header .site-heading {
@@ -373,7 +368,7 @@ form .row:first-child .floating-label-form-group {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 1px;
-    padding: 15px 25px;
+    padding: 5px 10px;
     background-color: #fff;
     border-radius:0
 }
@@ -413,7 +408,9 @@ img::-moz-selection {
 }
 
 code {
-    background-color:#ebd2d8
+    font-family: 'Roboto Mono', monospace;
+    background-color:#ebd2d8;
+    font-size: .8rem;
 }
 
 dt {
