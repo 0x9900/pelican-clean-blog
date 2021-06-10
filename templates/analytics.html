@@ -1,5 +1,5 @@
 {% if GOOGLE_ANALYTICS %}
-    <script type="text/javascript">
+    <script>
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', '{{GOOGLE_ANALYTICS}}']);
     _gaq.push(['_trackPageview']);
@@ -11,7 +11,7 @@
     </script>
 {% endif %}
 {% if GAUGES %}
-    <script type="text/javascript">
+    <script>
     var _gauges = _gauges || [];
     (function() {
         var t   = document.createElement('script');
@@ -26,7 +26,7 @@
     </script>
 {% endif %}
 {% if PIWIK_URL and PIWIK_SITE_ID %}
-    <script type="text/javascript">
+    <script>
     {% if PIWIK_SSL_URL %}
         var pkBaseURL = "{{ PIWIK_SSL_URL }}";
     {% else %}
