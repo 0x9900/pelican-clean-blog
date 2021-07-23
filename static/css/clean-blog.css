@@ -3,7 +3,8 @@
  * Copyright 2014 Start Bootstrap
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
-@import url(https://fonts.googleapis.com/css2?family=Assistant:wght@300;600&family=Fjalla+One&family=Roboto+Mono:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Assistant:wght@300;500&family=Fjalla+One&family=Roboto+Mono:wght@400&display=swap);
+
 html {
     font-size:14px
 }
@@ -17,18 +18,19 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fjalla One', sans-serif;
-    font-weight: 800;
     color:#505050
 }
 
-article > h2, article > h3 {
+article > h1, article > h2, article > h3 {
     margin-top: 3em;
     margin-bottom: 1em;
 }
 
 pre {
     font-family: 'Roboto Mono', monospace;
-    background-color:transparent
+    border-radius: 12px;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 p {
@@ -38,7 +40,8 @@ p {
 
 a {
     color: #558;
-    text-decoration:none
+    text-decoration:none;
+    font-weight: 500;
 }
 
 a:focus, a:hover {
@@ -70,14 +73,12 @@ hr.small {
 }
 
 .navbar-custom .navbar-brand {
-    font-weight: 800;
     padding:15px 10px;
     color: #444
 }
 
 .navbar-custom .nav li a {
     text-transform: uppercase;
-    font-weight: 800;
     letter-spacing: 1px;
     padding:15px 10px
 }
@@ -107,14 +108,12 @@ hr.small {
     }
 
     .navbar-custom .navbar-brand {
-	font-weight: 800;
 	padding:15px 10px;
 	color: #fff;
     }
 
     .navbar-custom .nav li a {
 	text-transform: uppercase;
-	font-weight: 800;
 	letter-spacing: 1px;
 	padding:15px 10px;
 	color: #fff;
@@ -225,12 +224,10 @@ hr.small {
 
 .intro-header .post-heading .subheading {
     margin: 10px 0 30px;
-    font-weight:800
 }
 
 .intro-header .post-heading .meta a {
     color: #fff;
-    font-weight:800
 }
 
 .post-preview > a:focus, .post-preview > a:hover {
@@ -266,7 +263,6 @@ hr.small {
 
 .section-heading {
     margin-top: 60px;
-    font-weight:800
 }
 
 figcaption {
@@ -350,7 +346,6 @@ form .row:first-child .floating-label-form-group {
 
 .btn {
     text-transform: uppercase;
-    font-weight: 800;
     letter-spacing: 1px;
     border-radius: 0;
     padding:15px 25px
@@ -372,7 +367,6 @@ form .row:first-child .floating-label-form-group {
 
 .pager li > a, .pager li > span {
     text-transform: uppercase;
-    font-weight: 800;
     letter-spacing: 1px;
     padding: 5px 10px;
     background-color: #fff;
@@ -506,10 +500,8 @@ img.aligncenter, img.alignleft, img.alignright {
 
 .tags p > a {
     color: #558;
-    font-weight:800;
 }
 
 .tags p > a:hover {
-    font-weight:800;
-    text-decoration: underline
+    text-decoration: underline;
 }
