@@ -21,6 +21,11 @@ h1, h2, h3, h4, h5, h6 {
     color:#505050
 }
 
+article > h2, article > h3 {
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
 pre {
     font-family: 'Roboto Mono', monospace;
     background-color:transparent
