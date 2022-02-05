@@ -26,9 +26,9 @@
 	  {%- for tag, articles in tags|sort %}
 	  <li>{{ tag }} ({{ articles|count }})</li>
 	  {%- for article in articles %}
-	  <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a><br/>
+	  <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a><br>
 	  {% endfor %}
-	  <hr/>
+	  <hr>
 	  {% endfor %}
 	</ul>
 
