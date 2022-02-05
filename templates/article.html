@@ -3,15 +3,15 @@
 {% block head %}
   {{ super() }}
   {% for keyword in article.keywords %}
-    <meta name="keywords" content="{{ keyword }}" />
+    <meta name="keywords" content="{{ keyword }}">
   {% endfor %}
   {% if article.description %}
-    <meta name="description" content="{{article.description}}" />
+    <meta name="description" content="{{article.description}}">
   {% endif %}
   {% for tag in article.tags %}
-    <meta name="tags" content="{{tag}}" />
+    <meta name="tags" content="{{tag}}">
   {% endfor %}
-    <meta name="spath" content="{{ article.relative_source_path }}" />
+    <meta name="spath" content="{{ article.relative_source_path }}">
 {% endblock %}
 
 {% block opengraph %}
