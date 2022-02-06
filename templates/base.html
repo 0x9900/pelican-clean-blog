@@ -43,6 +43,7 @@
       <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/code_blocks/darkly.css" rel="stylesheet">
     {% endif %}
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -70,10 +71,10 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="{{ SITEURL }}/">
-		  <i class="fa fa-home fa-fw" aria-hidden="true"></i>{{ SITENAME }}</a>
+		  <i class="fa fa-home fa-fw" aria-hidden="true" style="font-size:24px;"></i>{{ SITENAME }}</a>
 		{% if ABOUT_URL %}
 		<a class="navbar-brand" href="{{ SITEURL }}/{{ ABOUT_URL }}">
-		  <i class="fa fa-info-circle fa-fw" aria-hidden="true"></i>About</a>
+		  <i class="fa fa-info-circle fa-fw" aria-hidden="true" style="font-size:24px;"></i>About</a>
 		{% endif %}
 
             </div>
@@ -141,14 +142,11 @@
                     </ul>
 
 		    <p class="copyright text-muted">
-		      Blog powered by <a href="http://getpelican.com" target="_blank">Pelican</a>, using the
-		      <a href="http://github.com/0x9900/pelican-clean-blog" target="_blank">clean-blog</a> theme. <br>
-		      {%- if CC_LICENSE or CC_LICENSE_DERIVATIVES or CC_LICENSE_COMMERCIAL %}
-		      {% from 'cc-tools/cc-license.html' import cc_license_mark %}
-		      {{ cc_license_mark(cc_name=CC_LICENSE,derivatives=CC_LICENSE_DERIVATIVES,commercial=CC_LICENSE_COMMERCIAL,attr_markup=CC_ATTR_MARKUP,attr_props={'title':SITENAME,'name':article.author if article else AUTHOR,'url':SITEURL}) }}
-		      {% else %}
-		      &copy; {{ copy_date }} {{ AUTHOR }}
-		      {% endif %}
+		      Blog powered by <a href="https://blog.getpelican.com" target="_blank">Pelican</a>, using the
+		      <a href="https://github.com/0x9900/pelican-clean-blog" target="_blank">clean-blog</a> theme.<br>
+                      <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+                      <img alt="Creative Commons License" style="border-width:0" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAABGdBTUEAANbY1E9YMgAAAJZQTFRF////7u7u3d3dys7KzMzMyMzIxsrGxcbFur+6u7u7s7iyq7GqqqqqmZmZlJmTj5CPiIiIh4eHhoaGgICAfYJ9d3d3cnZxZ2tnZmZmW15bVVVVS0xLREREQ0NDQkJCQUJBOz07OTs5MzMzMTMxLjAuJygnJCUjIiIiISEhICAgGRkZERERDxAPDg4ODQ4NDQ0NDQ0MAAAADbeuvgAAANNJREFUeNqtk2kTgiAQhl/KzlWzgw6j+7Ayq/3/f64hTPNLNskOMMwuPLzsAtiygWHVNJC0TThIXSrxierXv/UZoJ8E2SHqQNQeVgSuT7lqh2dEjXk14C2AE7ESiiMHakdU773igF5keu5AKXDEHUQhpIyF50LeiNotEzct4+XO78AxO0JXJdzqO8uEqNvMBKUaYcbXDD8qVNNYSA/yXlRYEISfFNI9gBvzVCje1rDYF3L4sf+d03Lg5my5yv6jnwGXRwvvkMY8SHmrS9WfYvsvW7YnkDuZd7/ChBQAAAAASUVORK5CYII="></a>
+		      Content licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
 		    </p>
                 </div>
             </div>
