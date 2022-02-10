@@ -12,6 +12,19 @@
     <meta name="tags" content="{{tag}}">
   {% endfor %}
     <meta name="spath" content="{{ article.relative_source_path }}">
+
+  {% if article.style %}
+    <style>
+  {%- if article.style is string %}
+    {{ article.style }}
+  {% else %}
+  {% for line in article.style %}
+    {{ line }}
+  {% endfor %}
+  {% endif %}
+    </style>
+  {% endif %}
+
 {% endblock %}
 
 {% block opengraph %}
