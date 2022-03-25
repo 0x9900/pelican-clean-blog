@@ -25,6 +25,11 @@
     </style>
   {% endif %}
 
+  {% if article.javascript %}
+    <script src="{{ article.javascript }}"></script>
+  {% endif %}
+
+
 {% endblock %}
 
 {% block opengraph %}
