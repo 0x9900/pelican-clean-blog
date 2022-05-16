@@ -159,6 +159,11 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/bootstrap.min.js"></script>
 
+    {% if article and article.onload %}
+    <script>window.onload = {{ article.onload }}</script>
+    {% endif -%}
+
+
     <!-- Custom Theme JavaScript -->
     <script>
 $('#name').focus(function() {
@@ -189,7 +194,6 @@ jQuery(document).ready(function($) {
     }
 });
     </script>
-
     {% include 'analytics.html' %}
     {% include 'disqus_script.html' %}
 </body>
