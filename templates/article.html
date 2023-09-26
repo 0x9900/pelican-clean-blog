@@ -86,6 +86,9 @@
 
 {% block content %}
     <!-- Post Content -->
+	{% if article.status.lower() != "published" %}
+	<h1 class="draft">{{ article.status }}</h1>
+	{% endif %}
     <article>
         {{ article.content }}
     </article>
