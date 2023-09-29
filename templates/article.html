@@ -87,7 +87,7 @@
 {% block content %}
     <!-- Post Content -->
 	{% if article.status.lower() != "published" %}
-	<h1 class="draft">{{ article.status }}</h1>
+	<h1 class="draft">Draft</h1>
 	{% endif %}
     <article>
         {{ article.content }}
