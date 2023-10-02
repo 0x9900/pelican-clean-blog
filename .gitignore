@@ -2,3 +2,4 @@ example
 .DS_store
 *.old.*
 *.min.css
+*~

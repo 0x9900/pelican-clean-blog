@@ -42,7 +42,9 @@
     {% else %}
       <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/code_blocks/darkly.css" rel="stylesheet">
     {% endif %}
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" integrity="sha512-P9pgMgcSNlLb4Z2WAB2sH5KBKGnBfyJnq+bhcfLCFusrRc4XdXrhfDluBl/usq75NF5gTDIMcwI1GaG5gju+Mw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -64,20 +66,13 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="{{ SITEURL }}/">
-		  <i class="fa fa-home fa-fw" aria-hidden="true" style="font-size:24px;"></i>{{ SITENAME }}</a>
-		{% if ABOUT_URL %}
-		<a class="navbar-brand" href="{{ SITEURL }}/{{ ABOUT_URL }}">
-		  <i class="fa fa-info-circle fa-fw" aria-hidden="true" style="font-size:24px;"></i>About</a>
-		{% endif %}
-
-            </div>
+              <a class="navbar-brand" style="padding-left: 1.5em" href="{{ SITEURL }}/">
+		<i class="fa-solid fa-house fa-lg" aria-hidden="true"></i> {{ SITENAME }}</a>
+	      {% if ABOUT_URL %}
+	      <a class="navbar-brand" style="padding-left: 1.5em" href="{{ SITEURL }}/{{ ABOUT_URL }}">
+		<i class="fa-solid fa-circle-info fa-lg" aria-hidden="true"></i> About</a>
+	      {% endif %}
+	    </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -124,13 +119,18 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
                         <li>
-                          <a href="{{ TWITTER_URL }}">
-			    <i class="fa-brands fa-twitter fa-2xl"></i>
+                          <a href="{{ GITHUB_URL }}" target="_blank">
+			    <i class="fa-brands fa-github fa-2xl"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="{{ SUNACIVITY_URL }}" target="_blank">
+			    <i class="fa-solid fa-sun fa-2xl"></i>
                             </a>
                         </li>
                         <li>
-                          <a href="{{ GITHUB_URL }}">
-			    <i class="fa-brands fa-github fa-2xl"></i>
+                          <a href="{{ YSF_URL }}" target="_blank">
+			    <i class="fa-solid fa-walkie-talkie fa-2xl"></i>
                           </a>
                         </li>
                     </ul>

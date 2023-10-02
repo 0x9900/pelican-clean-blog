@@ -68,12 +68,8 @@
                         {% if article.headline %}
                             <h3 class="subheading">{{ article.headline }}</h3>
                         {% endif %}
-                        <span class="meta">Posted by
-                            {% for author in article.authors %}
-                                <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
-                            {% endfor %}
-				on {{ article.locale_date }}
-				{% if article.modified %} - updated on {{ article.modified.strftime('%b %d %Y') }}{% endif %}
+                        <span class="meta">Posted on {{ article.locale_date }}
+			  {% if article.modified %} - updated on {{ article.modified.strftime('%b %d %Y') }}{% endif %}
                         </span>
                         {% import 'translations.html' as translations with context %}
                         {{ translations.translations_for(article) }}
