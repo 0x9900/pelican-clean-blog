@@ -1,14 +1,18 @@
-{% if DEFAULT_PAGINATION %}
-    <!-- Pager -->
-    <ul class="pager">
-        <li class="next">
-            {% if articles_page.has_previous() %}
-                <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">Newest Posts</a>
-            {% endif %}
-            {% if articles_page.has_next() %}
-                <a href="{{ SITEURL }}/{{ articles_next_page.url }}">Older Posts</a>
-            {% endif %}
-        </li>
-    </ul>
-    Page {{ articles_page.number }} / {{ articles_paginator.num_pages }}
+ {% if DEFAULT_PAGINATION %}
+<!-- Pager -->
+<ul class="pager">
+  <li>
+    <span style="background-color: #fff; border: 0">Page: {{ articles_page.number }} / {{ articles_paginator.num_pages }}</span>
+  </li>
+  <li class="next">
+    {% if articles_page.has_previous() %}
+    <a href="{{ SITEURL }}/{{ articles_previous_page.url }}"><i class="fa-solid fa-arrow-right fa-lg"></i></a>
+    {% endif %}
+  </li>
+  <li class="next">
+    {% if articles_page.has_next() %}
+    <a href="{{ SITEURL }}/{{ articles_next_page.url }}"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
+    {% endif %}
+  </li>
+</ul>
 {% endif %}
