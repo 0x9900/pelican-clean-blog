@@ -66,16 +66,23 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-              <a class="navbar-brand" style="padding-left: 1.5em" href="{{ SITEURL }}/">
-		<i class="fa-solid fa-house fa-lg" aria-hidden="true"></i> {{ SITENAME }}</a>
-	      {% if ABOUT_URL %}
-	      <a class="navbar-brand" style="padding-left: 1.5em" href="{{ SITEURL }}/{{ ABOUT_URL }}">
-		<i class="fa-solid fa-circle-info fa-lg" aria-hidden="true"></i> About</a>
-	      {% endif %}
-	    </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="padding-left: 1.5em" href="{{ SITEURL }}/">
+		  <i class="fa-solid fa-house fa-lg" aria-hidden="true"></i> {{ SITENAME }}</a>
+		{% if ABOUT_URL %}
+		<a class="navbar-brand" style="padding-left: 1.5em" href="{{ SITEURL }}/{{ ABOUT_URL }}">
+		  <i class="fa-solid fa-circle-info fa-lg" aria-hidden="true"></i> About</a>
+		{% endif %}
+
+            </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     {% for title, link in MENUITEMS %}
                         <li><a href="{{ link }}">{{ title }}</a></li>
