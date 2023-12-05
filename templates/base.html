@@ -125,30 +125,35 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
+                        {% if GITHUB_URL %}
                         <li>
-                          <a href="{{ GITHUB_URL }}" target="_blank">
-			    <i class="fa-brands fa-github fa-2xl"></i>
-                          </a>
+                            <a href="{{ GITHUB_URL }}" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
                         </li>
+                        {% endif %}
+                        {% if SUNACIVITY_URL %}
                         <li>
-                          <a href="{{ SUNACIVITY_URL }}" target="_blank">
-			    <i class="fa-solid fa-sun fa-2xl"></i>
-                            </a>
+                            <a href="{{ SUNACIVITY_URL }}" target="_blank"><i class="fa-solid fa-sun fa-2xl"></i></a>
                         </li>
+                        {% endif %}
+                        {% if YSF_URL %}
                         <li>
-                          <a href="{{ YSF_URL }}" target="_blank">
-			    <i class="fa-solid fa-walkie-talkie fa-2xl"></i>
-                          </a>
+                            <a href="{{ YSF_URL }}" target="_blank"><i class="fa-solid fa-walkie-talkie fa-2xl"></i></a>
                         </li>
+                        {% endif %}
+                        {% if QRZ_URL %}
+                        <li>
+                            <a href="{{ QRZ_URL }}" target="_blank"><i class="fa-solid fa-tower-cell fa-2xl"></i></a>
+                        </li>
+                        {% endif %}
                     </ul>
 
-		    <p class="copyright text-muted">
-		      Blog powered by <a href="https://blog.getpelican.com" target="_blank">Pelican</a>, using the
-		      <a href="https://github.com/0x9900/pelican-clean-blog" target="_blank">clean-blog</a> theme.<br>
-                      <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
-                      <img alt="Creative Commons License" style="border-width:0" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAABGdBTUEAANbY1E9YMgAAAJZQTFRF////7u7u3d3dys7KzMzMyMzIxsrGxcbFur+6u7u7s7iyq7GqqqqqmZmZlJmTj5CPiIiIh4eHhoaGgICAfYJ9d3d3cnZxZ2tnZmZmW15bVVVVS0xLREREQ0NDQkJCQUJBOz07OTs5MzMzMTMxLjAuJygnJCUjIiIiISEhICAgGRkZERERDxAPDg4ODQ4NDQ0NDQ0MAAAADbeuvgAAANNJREFUeNqtk2kTgiAQhl/KzlWzgw6j+7Ayq/3/f64hTPNLNskOMMwuPLzsAtiygWHVNJC0TThIXSrxierXv/UZoJ8E2SHqQNQeVgSuT7lqh2dEjXk14C2AE7ESiiMHakdU773igF5keu5AKXDEHUQhpIyF50LeiNotEzct4+XO78AxO0JXJdzqO8uEqNvMBKUaYcbXDD8qVNNYSA/yXlRYEISfFNI9gBvzVCje1rDYF3L4sf+d03Lg5my5yv6jnwGXRwvvkMY8SHmrS9WfYvsvW7YnkDuZd7/ChBQAAAAASUVORK5CYII="></a>
-		      Content licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
-		    </p>
+                    <p class="copyright text-muted">
+                    Blog powered by <a href="https://blog.getpelican.com" target="_blank">Pelican</a>, using the
+                    <a href="https://github.com/0x9900/pelican-clean-blog" target="_blank">clean-blog</a> theme.<br>
+                    <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+                        <img alt="Creative Commons License" style="border-width:0" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAABGdBTUEAANbY1E9YMgAAAJZQTFRF////7u7u3d3dys7KzMzMyMzIxsrGxcbFur+6u7u7s7iyq7GqqqqqmZmZlJmTj5CPiIiIh4eHhoaGgICAfYJ9d3d3cnZxZ2tnZmZmW15bVVVVS0xLREREQ0NDQkJCQUJBOz07OTs5MzMzMTMxLjAuJygnJCUjIiIiISEhICAgGRkZERERDxAPDg4ODQ4NDQ0NDQ0MAAAADbeuvgAAANNJREFUeNqtk2kTgiAQhl/KzlWzgw6j+7Ayq/3/f64hTPNLNskOMMwuPLzsAtiygWHVNJC0TThIXSrxierXv/UZoJ8E2SHqQNQeVgSuT7lqh2dEjXk14C2AE7ESiiMHakdU773igF5keu5AKXDEHUQhpIyF50LeiNotEzct4+XO78AxO0JXJdzqO8uEqNvMBKUaYcbXDD8qVNNYSA/yXlRYEISfFNI9gBvzVCje1rDYF3L4sf+d03Lg5my5yv6jnwGXRwvvkMY8SHmrS9WfYvsvW7YnkDuZd7/ChBQAAAAASUVORK5CYII="></a>
+                    Content licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+                    </p>
                 </div>
             </div>
         </div>
