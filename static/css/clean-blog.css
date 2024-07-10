@@ -505,6 +505,7 @@ table {
     margin-bottom: 2em;
     box-shadow:5px 5px #cecece;
     font-size: 85%;
+    width: 80%;
 }
 
 td, th {
@@ -513,7 +514,8 @@ td, th {
 }
 
 th {
-    background-color:#afafaf
+    background-color: #e5e5e5;
+    text-align: right;
 }
 
 .alignleft, img.alignleft {
@@ -561,4 +563,12 @@ img.aligncenter, img.alignleft, img.alignright {
 
 .tags p > a {
     color: #3f3f5f;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.MathJax_Display, .MathJax_SVG {
+	font-size: .8em !important;
 }

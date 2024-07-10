@@ -2,9 +2,7 @@
 {% block title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
 {% block head %}
   {{ super() }}
-  {% for keyword in article.keywords %}
-    <meta name="keywords" content="{{ keyword }}">
-  {% endfor %}
+    <meta name="keywords" content="{{ article.keywords }}">
   {% if article.description %}
     <meta name="description" content="{{article.description}}">
   {% endif %}
