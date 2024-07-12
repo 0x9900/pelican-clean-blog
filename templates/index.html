@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block head %}
+  {{ super() }}
+  {% if BLOG_DESCRIPTION %}
+    <meta name="description" content="{{ BLOG_DESCRIPTION }}">
+  {% endif %}
+{% endblock %}
+
 {% block header %}
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->

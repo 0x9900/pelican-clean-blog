@@ -18,12 +18,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fjalla One', sans-serif;
-    color:#505050
 }
 
 article > h1, article > h2, article > h3 {
     margin-top: 3em;
     margin-bottom: 1em;
+    color: #505050;
 }
 
 .draft {
@@ -286,12 +286,13 @@ hr.small {
 }
 
 .post-preview > a:focus, .post-preview > a:hover {
-    color:#0085a1
+    color: #0085a1;
 }
 
 .post-preview > a > .post-title {
     margin-top: 30px;
-    margin-bottom:10px
+    margin-bottom:10px;
+	color: #3f3f7f;
 }
 
 .post-preview > a > .post-subtitle {
@@ -503,9 +504,17 @@ table {
     border-collapse: collapse;
     margin-top: 2em;
     margin-bottom: 2em;
-    box-shadow:5px 5px #cecece;
+    box-shadow: 5px 5px #cecece;
     font-size: 85%;
     width: 80%;
+}
+
+table caption {
+    caption-side: bottom; 
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8em;
+    color: #505050;
 }
 
 td, th {
