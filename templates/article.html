@@ -2,7 +2,9 @@
 {% block title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
 {% block head %}
   {{ super() }}
+  {% if article.keywords %}
     <meta name="keywords" content="{{ article.keywords }}">
+  {% endif %}
   {% if article.description %}
     <meta name="description" content="{{article.description}}">
   {% endif %}
@@ -21,10 +23,6 @@
   {% endfor %}
   {% endif %}
     </style>
-  {% endif %}
-
-  {% if article.javascript %}
-    <script src="{{ article.javascript }}"></script>
   {% endif %}
 
 {% endblock %}

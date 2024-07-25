@@ -165,14 +165,17 @@
     <!-- Bootstrap Core JavaScript -->
     <script async src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/bootstrap.min.js"></script>
 
-    {% if article and article.onload %}
-    <script>window.onload = {{ article.onload }}</script>
-    {% endif -%}
-
     {% include 'analytics.html' %}
     {% include 'disqus_script.html' %}
 
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/clean-blog.js"></script>
+    {% if article and article.javascript %}
+    <script src="{{ article.javascript }}"></script>
+    {% endif %}
+    {% if article and article.onload %}
+    <script>window.onload = {{ article.onload }}</script>
+    {% endif -%}
+
 
 </body>
 </html>
