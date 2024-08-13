@@ -324,7 +324,7 @@ footer {
 
 footer .list-inline {
     margin: 0;
-    padding:0
+    padding: 0;
 }
 
 footer .copyright {
@@ -388,8 +388,9 @@ form .row:first-child .floating-label-form-group {
 .btn {
     text-transform: uppercase;
     letter-spacing: 1px;
-    border-radius: 0;
-    padding:15px 25px
+    border-radius: 5px;
+    padding: 10px 15px;
+
 }
 
 .btn-lg {
