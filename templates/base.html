@@ -42,9 +42,10 @@
     {% else %}
       <link href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/code_blocks/darkly.css" rel="stylesheet">
     {% endif %}
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" integrity="sha512-P9pgMgcSNlLb4Z2WAB2sH5KBKGnBfyJnq+bhcfLCFusrRc4XdXrhfDluBl/usq75NF5gTDIMcwI1GaG5gju+Mw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/fontawesome.min.css" integrity="sha512-lauN4D/0AgFUGvmMR+knQnbOADyD/XuQ8VF18I8Ll0+TLvsujshyxvU+uzogmQbSq6qJd5jnUdYtK8ShxXMlSg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/solid.min.css" integrity="sha512-bdqdas3Yr82pkTg5i0X1gcAT3tBXz/8H3J1ec7RyEKAvr/YiSCJNV2dnkukmL8CicjKb9rxmd+ILK8Kg2o2wvQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/brands.min.css" integrity="sha512-7rXIvd/xj1FnI2zKQjjXzDFxC4twqBByp8yxOgEQJs4C/aNzNyoQsOO7VxH0RgYNhbAYLJLwzqslaP50KTTHIQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -127,15 +128,15 @@
                     {% if SOCIAL_NETWORK %}
                     <ul class="list-inline text-center">
                         {% for social, icon in SOCIAL_NETWORK %}
-                        <li><a href="{{ social }}" target="_blank"><i class="{{ icon }}"></i></a></li>
+                        <li><a href="{{ social }}" target="_blank" rel="noopener noreferrer nofollow"><i class="{{ icon }}"></i></a></li>
                         {% endfor %}
                     </ul>
                     {% endif %}
                     <p class="copyright text-muted">
-                    Blog powered by <a href="https://blog.getpelican.com" target="_blank">Pelican</a>, using the heavily modified 
-                    <a href="https://github.com/0x9900/pelican-clean-blog" target="_blank">clean-blog</a> theme.<br>
-                    Content licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.</a>
-                    <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+                    Blog powered by <a href="https://blog.getpelican.com" target="_blank" rel="noopener noreferrer nofollow">Pelican</a>, using the heavily modified 
+                    <a href="https://github.com/0x9900/pelican-clean-blog" target="_blank" rel="noopener noreferrer nofollow">clean-blog</a> theme.<br>
+                    Content licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="licence noopener noreferrer nofollow">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+                    <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="licence noopener noreferrer nofollow">
                         <img alt="Creative Commons License" style="border-width:0" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAABGdBTUEAANbY1E9YMgAAAJZQTFRF////7u7u3d3dys7KzMzMyMzIxsrGxcbFur+6u7u7s7iyq7GqqqqqmZmZlJmTj5CPiIiIh4eHhoaGgICAfYJ9d3d3cnZxZ2tnZmZmW15bVVVVS0xLREREQ0NDQkJCQUJBOz07OTs5MzMzMTMxLjAuJygnJCUjIiIiISEhICAgGRkZERERDxAPDg4ODQ4NDQ0NDQ0MAAAADbeuvgAAANNJREFUeNqtk2kTgiAQhl/KzlWzgw6j+7Ayq/3/f64hTPNLNskOMMwuPLzsAtiygWHVNJC0TThIXSrxierXv/UZoJ8E2SHqQNQeVgSuT7lqh2dEjXk14C2AE7ESiiMHakdU773igF5keu5AKXDEHUQhpIyF50LeiNotEzct4+XO78AxO0JXJdzqO8uEqNvMBKUaYcbXDD8qVNNYSA/yXlRYEISfFNI9gBvzVCje1rDYF3L4sf+d03Lg5my5yv6jnwGXRwvvkMY8SHmrS9WfYvsvW7YnkDuZd7/ChBQAAAAASUVORK5CYII="></a>
                     </p>
                 </div>

@@ -11,4 +11,13 @@
     {% endif %}
   </url>
 {% endfor %}
+
+{% for file in EXTRA_PATH_METADATA.values() %}
+{% if file.path.endswith('.html') %}
+  <url>
+    <loc>{{ SITEURL }}/{{ file.path }}</loc>
+  </url>
+{% endif %}
+{% endfor %}
+
 </urlset>
