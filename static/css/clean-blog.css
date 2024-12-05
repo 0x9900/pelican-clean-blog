@@ -150,10 +150,7 @@ hr.small {
 
 @media (min-width: 768px) {
   body, html {
-    font-size:36px
-  }
-  .article {
-    font-size: 20px;
+    font-size:16px
   }
   .pager li > a, .pager li > span {
     padding: 15px 20px;
