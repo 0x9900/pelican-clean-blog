@@ -1,19 +1,19 @@
 /*!
- * Clean Blog v1.0.0 (http://startbootstrap.com)
+ * Clean Blog v1.0.0 (http: //startbootstrap.com)
  * Copyright 2014 Start Bootstrap
- * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
+ * Licensed under Apache 2.0 (https: //github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
-@import url(https://fonts.googleapis.com/css2?family=Assistant:wght@300;500&family=Fjalla+One&family=Roboto+Mono:wght@400&display=swap);
+@import url(https: //fonts.googleapis.com/css2?family=Assistant:wght@200..600&family=Fjalla+One&family=Roboto+Mono:wght@400&display=swap);
 
 html {
-  font-size:14px
+  font-size: 14px
 }
 
 body {
-  font-size: 14px;
+  font-size: 12px;
   font-family: Assistant, sans-serif;
-  font-weight:300;
-  color:#303030
+  font-weight: 200;
+  color: #202020
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 article > h1, article > h2, article > h3 {
   margin-top: 3em;
   margin-bottom: 1em;
-  color: #505050;
+  color: #606060;
 }
 
 .draft {
@@ -53,28 +53,32 @@ pre {
 
 p {
   line-height: 1.5;
-  margin:30px 0
+  margin: 30px 0
 }
 
 a {
   color: #3f3f7f;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 a:focus, a:hover {
-  color:#0085a1;
+  color: #0085a1;
   text-decoration: none;
+}
+
+article strong {
+  font-weight: 400;
 }
 
 article a {
   color: #3f3f7f;
-  text-decoration: none;
-  font-weight: 500;
+  text-decoration: underscore;
+  font-weight: 400;
 }
 
 article a:focus, article a:hover {
-  color:#0085a1;
+  color: #0085a1;
   background-color: #e7e7e7;
   text-decoration: none;
   border-radius: 3px;
@@ -94,7 +98,7 @@ blockquote {
   position: relative;
 }
 
-blockquote:before {
+blockquote: before {
   color: #aac;
   content: "“";
   font-family: Georgia, serif;
@@ -122,7 +126,7 @@ hr.small {
   max-width: 100px;
   margin: 15px auto;
   border-width: 4px;
-  border-color:#fff
+  border-color: #fff
 }
 
 .navbar-custom {
@@ -130,18 +134,18 @@ hr.small {
   top: 0;
   left: 0;
   width: 100%;
-  z-index:3
+  z-index: 3
 }
 
 .navbar-custom .navbar-brand {
-  padding:15px 10px;
+  padding: 15px 10px;
   color: #444
 }
 
 .navbar-custom .nav li a {
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding:15px 10px
+  padding: 15px 10px
 }
 
 .navbar-custom .nav li a:focus, .navbar-custom .nav li a:hover {
@@ -150,33 +154,33 @@ hr.small {
 
 @media (min-width: 768px) {
   body, html {
-    font-size:16px
+    font-size: 16px
   }
   .pager li > a, .pager li > span {
     padding: 15px 20px;
   }
   .navbar-custom {
     background: 0 0;
-    border-bottom:1px solid transparent
+    border-bottom: 1px solid transparent
   }
 
   .navbar-custom .navbar-brand:focus, .navbar-custom .navbar-brand:hover {
-    color:rgba(255, 255, 255, .8)
+    color: rgba(255, 255, 255, .8)
   }
 
   .navbar-custom .nav li a:focus, .navbar-custom .nav li a:hover {
-    color:rgba(255, 255, 255, .8)
+    color: rgba(255, 255, 255, .8)
   }
 
   .navbar-custom .navbar-brand {
-    padding:15px 10px;
+    padding: 15px 10px;
     color: #fff;
   }
 
   .navbar-custom .nav li a {
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding:15px 10px;
+    padding: 15px 10px;
     color: #fff;
   }
 }
@@ -195,7 +199,7 @@ hr.small {
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
-    backface-visibility:hidden
+    backface-visibility: hidden
   }
 
   .navbar-custom.is-fixed {
@@ -205,20 +209,20 @@ hr.small {
     border-bottom: 2px solid #4f4f4f;
     -webkit-transition: -webkit-transform .6s;
     -moz-transition: -moz-transform .6s;
-    transition:transform .6s
+    transition: transform .6s
   }
 
   .navbar-custom.is-fixed .navbar-brand {
-    color:#404040
+    color: #404040
   }
 
   .navbar-custom.is-fixed .navbar-brand:focus, .navbar-custom.is-fixed .navbar-brand:hover {
-    color:#ffffff
+    color: #ffffff
   }
 
   .navbar-custom.is-fixed .nav li a:focus, .navbar-custom.is-fixed .nav li a:hover {
     background-color: #aeaeae;
-    color:#0085a1
+    color: #0085a1
   }
 
   .navbar-custom.is-visible {
@@ -226,11 +230,11 @@ hr.small {
     -moz-transform: translate3d(0, 100%, 0);
     -ms-transform: translate3d(0, 100%, 0);
     -o-transform: translate3d(0, 100%, 0);
-    transform:translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0)
   }
 
   .intro-header .page-heading h1, .intro-header .site-heading h1 {
-    font-size:8rem
+    font-size: 8rem
   }
 }
 
@@ -242,46 +246,46 @@ hr.small {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom:50px
+  margin-bottom: 50px
 }
 
 .intro-header .page-heading, .intro-header .post-heading, .intro-header .site-heading {
   padding: 100px 0 50px;
-  color:#fff
+  color: #fff
 }
 
 @media (min-width: 768px) {
   .intro-header .page-heading h1, .intro-header .site-heading h1 {
-    font-size:3rem
+    font-size: 3rem
   }
 
   .intro-header .page-heading, .intro-header .post-heading, .intro-header .site-heading {
-    padding:150px 0
+    padding: 150px 0
   }
 
   .intro-header .page-heading .subheading, .intro-header .site-heading .subheading {
-    font-style:italic
+    font-style: italic
   }
 }
 
 .intro-header .page-heading, .intro-header .site-heading {
-  text-align:center
+  text-align: center
 }
 
 .intro-header .page-heading h1, .intro-header .site-heading h1 {
   color: #fff;
-  margin-top:0
+  margin-top: 0
 }
 
 .intro-header .post-heading h1 {
   color: #fff;
-  font-size:3rem
+  font-size: 3rem
 }
 
 .intro-header .page-heading .subheading, .intro-header .post-heading .meta, .intro-header .post-heading .subheading, .intro-header .site-heading .subheading {
   line-height: 1.1;
   display: block;
-  font-style:italic
+  font-style: italic
 }
 
 .intro-header .post-heading .subheading {
@@ -298,13 +302,13 @@ hr.small {
 
 .post-preview > a > .post-title {
   margin-top: 30px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   color: #3f3f7f;
 }
 
 .post-preview > a > .post-subtitle {
   margin: 0;
-  margin-bottom:10px
+  margin-bottom: 10px
 }
 
 .post-preview > .post-meta {
@@ -312,16 +316,16 @@ hr.small {
   color: grey;
   font-style: italic;
   margin-top: 0;
-  text-align:right
+  text-align: right
 }
 
 .post-preview p {
   margin-left: 1.5rem;
-  margin-top:.7rem
+  margin-top: .7rem
 }
 
 .post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
-  color:#0085a1
+  color: #0085a1
 }
 
 .section-heading {
@@ -338,7 +342,7 @@ figcaption {
 }
 
 footer {
-  padding:50px 0 65px;
+  padding: 50px 0 65px;
   font-size: .7rem;
 }
 
@@ -349,14 +353,14 @@ footer .list-inline {
 
 footer .copyright {
   text-align: center;
-  margin-bottom:0
+  margin-bottom: 0
 }
 
 .floating-label-form-group {
   position: relative;
   margin-bottom: 0;
   padding-bottom: .5em;
-  border-bottom:1px solid #eee
+  border-bottom: 1px solid #eee
 }
 
 .floating-label-form-group input, .floating-label-form-group textarea {
@@ -368,7 +372,7 @@ footer .copyright {
   border-radius: 0;
   background: 0 0;
   box-shadow: none !important;
-  resize:none
+  resize: none
 }
 
 .floating-label-form-group label {
@@ -384,25 +388,25 @@ footer .copyright {
   -webkit-transition: top .6s ease, opacity .6s ease;
   -moz-transition: top .6s ease, opacity .6s ease;
   -ms-transition: top .6s ease, opacity .6s ease;
-  transition:top .6s ease, opacity .6s ease
+  transition: top .6s ease, opacity .6s ease
 }
 
 .floating-label-form-group::not(:first-child) {
   padding-left: 14px;
-  border-left:1px solid #eee
+  border-left: 1px solid #eee
 }
 
 .floating-label-form-group-with-value label {
   top: 0;
-  opacity:1
+  opacity: 1
 }
 
 .floating-label-form-group-with-focus label {
-  color:#0085a1
+  color: #0085a1
 }
 
-form .row:first-child .floating-label-form-group {
-  border-top:1px solid #eee
+form .row: first-child .floating-label-form-group {
+  border-top: 1px solid #eee
 }
 
 .btn {
@@ -414,17 +418,17 @@ form .row:first-child .floating-label-form-group {
 }
 
 .btn-lg {
-  padding:25px 35px
+  padding: 25px 35px
 }
 
 .btn-default:focus, .btn-default:hover {
   background-color: #0085a1;
   border: 1px solid #0085a1;
-  color:#fff
+  color: #fff
 }
 
 .pager {
-  margin:20px 0 0
+  margin: 20px 0 0
 }
 
 .pager li > a, .pager li > span {
@@ -433,31 +437,31 @@ form .row:first-child .floating-label-form-group {
   padding: 10px;
   margin-left: .7em;
   background-color: #cdcdcd;
-  border-radius:10;
+  border-radius: 10;
 }
 
 .pager li > a:focus, .pager li > a:hover {
   color: #fff;
   background-color: #0085a1;
-  border:1px solid #0085a1
+  border: 1px solid #0085a1
 }
 
 .pager .disabled > a, .pager .disabled > a:focus, .pager .disabled > a:hover, .pager .disabled > span {
   color: grey;
   background-color: #404040;
-  cursor:not-allowed
+  cursor: not-allowed
 }
 
 ::-moz-selection {
   color: #fff;
   text-shadow: none;
-  background:#0085a1
+  background: #0085a1
 }
 
 ::selection {
   color: #fff;
   text-shadow: none;
-  background:#0085a1
+  background: #0085a1
 }
 
 img::selection {
@@ -467,39 +471,39 @@ img::selection {
 
 img::-moz-selection {
   color: #fff;
-  background :0 0;
+  background : 0 0;
 }
 
 code {
   font-family: 'Roboto Mono', monospace;
-  background-color:#ebd2d8;
+  background-color: #ebd2d8;
   font-size: .8rem;
 }
 
 dt {
-  margin-top:30px
+  margin-top: 30px
 }
 
 dd {
-  margin-left:30px
+  margin-left: 30px
 }
 
 .footnote {
-  color:#555;
+  color: #555;
   font-size: .7rem;
 }
 
 .footnote li > p {
-  margin:0
+  margin: 0
 }
 
 .footnote > hr {
-  border-top-color:#836235
+  border-top-color: #836235
 }
 
 figure {
   text-align: center;
-  font-style:italic
+  font-style: italic
 }
 
 figure img {
@@ -527,7 +531,7 @@ table caption {
 
 td, th {
   border: 1px solid #444;
-  padding:.25em .5em
+  padding: .25em .5em
 }
 
 th {
@@ -539,25 +543,25 @@ th {
   display: inline;
   float: left;
   margin-right: 24px;
-  margin-top:4px
+  margin-top: 4px
 }
 
 .alignright, img.alignright {
   display: inline;
   float: right;
   margin-left: 24px;
-  margin-top:4px
+  margin-top: 4px
 }
 
 .aligncenter, img.aligncenter {
   clear: both;
   display: block;
   margin-left: auto;
-  margin-right:auto
+  margin-right: auto
 }
 
 img.aligncenter, img.alignleft, img.alignright {
-  margin-bottom:12px
+  margin-bottom: 12px
 }
 
 .error {
@@ -571,19 +575,19 @@ img.aligncenter, img.alignleft, img.alignright {
 .tilt {
   -webkit-transform: rotate(5deg);
   -moz-transform: rotate(5deg);
-  transform:rotate(5deg)
+  transform: rotate(5deg)
 }
 
 .tiltleft {
   -webkit-transform: rotate(-2.5deg);
   -moz-transform: rotate(-2.5deg);
-  transform:rotate(-2.5deg)
+  transform: rotate(-2.5deg)
 }
 
 .shadow {
   -webkit-box-shadow: rgba(0, 0, 0, .5) 5px 10px 8px;
   -moz-box-shadow: rgba(0, 0, 0, .5) 5px 10px 8px;
-  box-shadow:rgba(0, 0, 0, .5) 5px 10px 8px
+  box-shadow: rgba(0, 0, 0, .5) 5px 10px 8px
 }
 
 .tags p > a {
@@ -618,7 +622,7 @@ img.aligncenter, img.alignleft, img.alignright {
   margin-bottom: 5px;
 }
 
-.admonition-title:before {
+.admonition-title: before {
   font-family: "Font Awesome 6 Free";
   margin-right: 8px;
   font-weight: 900;
@@ -633,7 +637,7 @@ img.aligncenter, img.alignleft, img.alignright {
   background-color: #e7f2fa;
 }
 
-.note .admonition-title:before {
+.note .admonition-title: before {
   content: "\f249";
   color: #2980b9;
 }
@@ -643,7 +647,7 @@ img.aligncenter, img.alignleft, img.alignright {
   background-color: #f1f1f1;
 }
 
-.info .admonition-title:before {
+.info .admonition-title: before {
   content: "\f05a";
   color: #2980b9;
 }
@@ -653,7 +657,7 @@ img.aligncenter, img.alignleft, img.alignright {
   border-color: #f39c12;
 }
 
-.warning .admonition-title:before {
+.warning .admonition-title: before {
   content: "\f071";
   color: #f39c12;
 }
@@ -663,7 +667,7 @@ img.aligncenter, img.alignleft, img.alignright {
   border-color: #c0392b;
 }
 
-.danger .admonition-title:before {
+.danger .admonition-title: before {
   content: "\f06a";
   color: #c0392b;
 }
@@ -673,7 +677,7 @@ img.aligncenter, img.alignleft, img.alignright {
   border-color: #27ae60;
 }
 
-.tip .admonition-title:before {
+.tip .admonition-title: before {
   content: "\f0eb";
   color: #27ae60;
 }
@@ -683,7 +687,7 @@ img.aligncenter, img.alignleft, img.alignright {
   border-color: #3f51b5;
 }
 
-.important .admonition-title:before {
+.important .admonition-title: before {
   content: "\f06d";
   color: #3f51b5;
 }
