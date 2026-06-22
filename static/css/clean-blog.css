@@ -3,7 +3,7 @@
  * Copyright 2014 Start Bootstrap
  * Licensed under Apache 2.0 (https: //github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
-@import url(https: //fonts.googleapis.com/css2?family=Assistant:wght@200..600&family=Fjalla+One&family=Roboto+Mono:wght@400&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..600&family=Fjalla+One&family=IBM+Plex+Mono&display=swap');
 
 html {
   font-size: 14px
@@ -40,12 +40,12 @@ article > h1, article > h2, article > h3 {
   font-weight: bold;
   text-transform: uppercase;
   font-family: 'Fjalla One', sans-serif;
-  color: rgba(1, 1, 1, 0.15);
+  color: rgba(1, 1, 1, 0.05);
   transform: rotateY(0deg) rotate(-45deg);
 }
 
 pre {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'IBM Plex', monospace;
   border-radius: 12px;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
@@ -77,7 +77,8 @@ article a {
   font-weight: 400;
 }
 
-article a:focus, article a:hover {
+article a:focus:not(:has(img)), 
+article a:hover:not(:has(img)) {
   color: #0085a1;
   background-color: #e7e7e7;
   text-decoration: none;
@@ -86,7 +87,7 @@ article a:focus, article a:hover {
   margin: 0 -5px;
 }
 
-a img:focus, a img:hover {
+article a:focus:has(img), article a:hover:has(img) {
   cursor: zoom-in;
 }
 
@@ -475,7 +476,7 @@ img::-moz-selection {
 }
 
 code {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'IBM Plex', monospace;
   background-color: #ebd2d8;
   font-size: .8rem;
 }
@@ -503,13 +504,13 @@ dd {
 
 figure {
   text-align: center;
-  font-style: italic
+  font-style: italic;
+  margin-bottom: 1.2em;
 }
 
 figure img {
   border-radius: 7px;
   overflow: hidden; /* Hides any part of the image outside the rounded corners */
-  width: 100%;
 }
 
 table {
@@ -588,6 +589,21 @@ img.aligncenter, img.alignleft, img.alignright {
   -webkit-box-shadow: rgba(0, 0, 0, .5) 5px 10px 8px;
   -moz-box-shadow: rgba(0, 0, 0, .5) 5px 10px 8px;
   box-shadow: rgba(0, 0, 0, .5) 5px 10px 8px
+}
+
+.imgshadow img {
+  -webkit-box-shadow: rgba(0, 0, 0, .5) 5px 10px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, .5) 5px 10px 8px;
+  box-shadow: rgba(0, 0, 0, .5) 5px 10px 8px
+}
+
+.image-caption {
+  text-align: center;
+  padding-top: 10px;
+  font-style: italic;
+  margin: 0;
+  display: block;
+  font-size: .7rem;
 }
 
 .tags p > a {
